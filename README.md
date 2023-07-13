@@ -1,9 +1,9 @@
 **IPL_Data_Analysis**
 
  1. Import Raw data from CSV file.
-	2. Walkthrough the data
-	3. Data Cleaning ( Like - Bengaluru and Bangalore are Same , replace them as one)
-	4. Data Processing
+ 2. Walkthrough the data
+ 3. Data Cleaning ( Like - Bengaluru and Bangalore are Same , replace them as one)
+ 4. Data Processing
 		i. Create a Calendar table - 
 		
 		Calendar Table = CALENDAR(min(ipl_matches_2008_2022[match_date]),max(ipl_matches_2008_2022[match_date]))
@@ -13,9 +13,8 @@
 		Year = YEAR('Calendar Table'[Date])
 		
 		Connect match_date from ipl_mathes to the date column in Calendar table.
-		
-	5. Add Background Image and Title.
-	6. KPI Design -  Add a Slicer for Selecting the Season at the Top.
+5. Add Background Image and Title.
+6. KPI Design -  Add a Slicer for Selecting the Season at the Top.
 	
 			► Season Winner -
 			
@@ -94,5 +93,4 @@
 				    COUNTROWS ( ipl_matches_2008_2022 ),
 				    ipl_matches_2008_2022[toss_winner] = ipl_matches_2008_2022[winning_team]
 				)
-				
-	7. Add the images to respectively Cards.
+   7. Add the images to respectively Cards.
