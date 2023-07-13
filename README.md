@@ -96,4 +96,3 @@
 				)
 				
 	7. Add the images to respectively Cards.
-![image](https://github.com/KabilanNedunkilli/Data_Analysis/assets/104073053/ad1025a2-4ff1-4f52-9764-432501990b27)
