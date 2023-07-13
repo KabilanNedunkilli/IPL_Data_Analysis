@@ -1,7 +1,8 @@
 **IPL_Data_Analysis**
- Please find the IPL_Analysis_Dashboard,
    
 <img width="605" alt="image" src="https://github.com/KabilanNedunkilli/IPL_Data_Analysis/assets/104073053/c9c4125b-4aae-4676-abbf-1d9ac16472a9">'
+
+## Steps & DAX Measures.
 
  1. Import Raw data from CSV file.
  2. Walkthrough the data
@@ -17,9 +18,8 @@
 		
 		Connect match_date from ipl_mathes to the date column in Calendar table.
 5. Add Background Image and Title.
-6. KPI Design -  Add a Slicer for Selecting the Season at the Top.
-	
-			► Season Winner -
+6. KPI Design -  Add a Slicer for Selecting the Season at the Top
+   ► Season Winner -
 			
 			Title Winner =
 			VAR max_date =
@@ -42,7 +42,8 @@
 			    ipl_matches_2008_2022[match_number] = "Final"
 			)
 			 
-			► Economy :
+
+   ► Economy :
 		
 			ECONOMY =
 			DIVIDE (
@@ -58,7 +59,8 @@
 			)
 			
 		
-			► Batting Strike Rate :
+
+   ► Batting Strike Rate :
 				Strike Rate for Batsman =
 				(
 				    SUM ( ipl_ball_by_ball_2008_2022[batsman_run] )
@@ -66,10 +68,13 @@
 				) * 100
 				
 			
-			► Batter Runs = CONCATENATE( SUM(ipl_ball_by_ball_2008_2022[batsman_run]), " Runs")
+
+   ► Batter Runs = CONCATENATE( SUM(ipl_ball_by_ball_2008_2022[batsman_run]), " Runs")
 			
-			► Bowler Wickets = CONCATENATE(SUM(ipl_ball_by_ball_2008_2022[iswicket_delivery]), " Wickets")
-			► Average :
+
+   ► Bowler Wickets = CONCATENATE(SUM(ipl_ball_by_ball_2008_2022[iswicket_delivery]), " Wickets")
+
+   ► Average :
 				
 				Average = 
 				DIVIDE (
@@ -84,16 +89,19 @@
 				    SUM(ipl_ball_by_ball_2008_2022[iswicket_delivery])
 				)
 				
-			► Bowling Strike Rate : 
+
+   ► Bowling Strike Rate : 
 					Bowling Strike Rate =
 					COUNT ( ipl_ball_by_ball_2008_2022[bowler] )
 					    / SUM ( ipl_ball_by_ball_2008_2022[iswicket_delivery] )
 					
 					
-			► Matches Won On Toss Decision
+
+   ► Matches Won On Toss Decision
 				Match Won or Loss Based Upon Toss =
 				CALCULATE (
 				    COUNTROWS ( ipl_matches_2008_2022 ),
 				    ipl_matches_2008_2022[toss_winner] = ipl_matches_2008_2022[winning_team]
 				)
-   7. Add the images to respectively Cards.
+
+7. Add the images to respectively Cards.	
