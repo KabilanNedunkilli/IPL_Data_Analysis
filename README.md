@@ -4,7 +4,7 @@
 
 ## Steps & DAX Measures.
 
- 1. Import Raw data from CSV file.
+ 1. Import Raw data from Local Database/CSV file.
  2. Walkthrough the data
  3. Data Cleaning ( Like - Bengaluru and Bangalore are Same , replace them as one)
  4. Data Processing
@@ -104,4 +104,4 @@
 				    ipl_matches_2008_2022[toss_winner] = ipl_matches_2008_2022[winning_team]
 				)
 
-7. Add the images to respectively Cards.	
+7. Add images to respective Cards.	
