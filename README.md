@@ -1,4 +1,7 @@
 **IPL_Data_Analysis**
+ Please find the IPL_Analysis_Dashboard,
+   
+<img width="605" alt="image" src="https://github.com/KabilanNedunkilli/IPL_Data_Analysis/assets/104073053/c9c4125b-4aae-4676-abbf-1d9ac16472a9">'
 
  1. Import Raw data from CSV file.
  2. Walkthrough the data
@@ -94,5 +97,3 @@
 				    ipl_matches_2008_2022[toss_winner] = ipl_matches_2008_2022[winning_team]
 				)
    7. Add the images to respectively Cards.
-
-<img width="605" alt="image" src="https://github.com/KabilanNedunkilli/IPL_Data_Analysis/assets/104073053/c9c4125b-4aae-4676-abbf-1d9ac16472a9">
